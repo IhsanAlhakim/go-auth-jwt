@@ -8,6 +8,10 @@ import (
 )
 
 type Config struct {
+	AppName         string
+	JWTSigKey       string
+	TokenCookieName string
+
 	DBName     string
 	DBUsername string
 	DBPassword string
@@ -27,10 +31,13 @@ func Load() *Config {
 	}
 
 	return &Config{
-		DBName:     os.Getenv("DB_NAME"),
-		DBUsername: os.Getenv("DB_USERNAME"),
-		DBPassword: os.Getenv("DB_PASSWORD"),
-		DBAddr:     os.Getenv("DB_ADDRESS"),
-		Port:       port,
+		AppName:         os.Getenv("APP_NAME"),
+		JWTSigKey:       os.Getenv("JWT_SIGNATURE_KEY"),
+		TokenCookieName: os.Getenv("TOKEN_COOKIE_NAME"),
+		DBName:          os.Getenv("DB_NAME"),
+		DBUsername:      os.Getenv("DB_USERNAME"),
+		DBPassword:      os.Getenv("DB_PASSWORD"),
+		DBAddr:          os.Getenv("DB_ADDRESS"),
+		Port:            port,
 	}
 }
