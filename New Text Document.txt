@@ -1,0 +1,8 @@
+username password ke server
+server terima
+cek pass user
+ok
+bikin jwt token
+bikin cookie http only
+masukin jwt ke cookie
+kirim ke client sebagai cookie
