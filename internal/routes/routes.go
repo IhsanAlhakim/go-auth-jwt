@@ -9,6 +9,7 @@ import (
 )
 
 func Register(mux *mux.Mux, m *middlewares.Middleware, h *handlers.Handler) {
+	mux.Handle("GET /index", m.Auth(http.HandlerFunc(h.Index)))
 	mux.Handle("GET /users/{id}", m.Auth(http.HandlerFunc(h.GetUser)))
 	mux.HandleFunc("POST /users", h.CreateUser)
 	mux.Handle("PUT /users/{id}", m.Auth(http.HandlerFunc(h.UpdateUser)))
