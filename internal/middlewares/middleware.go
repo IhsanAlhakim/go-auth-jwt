@@ -1,7 +1,7 @@
 package middlewares
 
 import (
-	"github.com/IhsanAlhakim/go-auth-api/internal/config"
+	"github.com/IhsanAlhakim/go-auth-jwt/internal/config"
 )
 
 type Middleware struct {

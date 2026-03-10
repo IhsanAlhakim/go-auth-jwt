@@ -5,7 +5,7 @@ import (
 	"errors"
 	"net/http"
 
-	"github.com/IhsanAlhakim/go-auth-api/internal/auth"
+	"github.com/IhsanAlhakim/go-auth-jwt/internal/auth"
 )
 
 var ContextWithUserInfoKey = "userInfo"

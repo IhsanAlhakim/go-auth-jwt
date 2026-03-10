@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/IhsanAlhakim/go-auth-api/internal/middlewares"
+	"github.com/IhsanAlhakim/go-auth-jwt/internal/middlewares"
 	"github.com/golang-jwt/jwt/v5"
 )
 

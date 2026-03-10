@@ -4,8 +4,8 @@ import (
 	"database/sql"
 	"net/http"
 
-	"github.com/IhsanAlhakim/go-auth-api/internal/auth"
-	"github.com/IhsanAlhakim/go-auth-api/internal/validation"
+	"github.com/IhsanAlhakim/go-auth-jwt/internal/auth"
+	"github.com/IhsanAlhakim/go-auth-jwt/internal/validation"
 )
 
 type User struct {

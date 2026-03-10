@@ -3,7 +3,7 @@ package handlers
 import (
 	"database/sql"
 
-	"github.com/IhsanAlhakim/go-auth-api/internal/config"
+	"github.com/IhsanAlhakim/go-auth-jwt/internal/config"
 )
 
 type Handler struct {

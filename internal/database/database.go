@@ -4,7 +4,7 @@ import (
 	"database/sql"
 	"log"
 
-	"github.com/IhsanAlhakim/go-auth-api/internal/config"
+	"github.com/IhsanAlhakim/go-auth-jwt/internal/config"
 	"github.com/go-sql-driver/mysql"
 )
 

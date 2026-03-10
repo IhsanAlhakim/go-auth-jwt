@@ -11,12 +11,12 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/IhsanAlhakim/go-auth-api/internal/config"
-	"github.com/IhsanAlhakim/go-auth-api/internal/database"
-	"github.com/IhsanAlhakim/go-auth-api/internal/handlers"
-	"github.com/IhsanAlhakim/go-auth-api/internal/middlewares"
-	"github.com/IhsanAlhakim/go-auth-api/internal/mux"
-	"github.com/IhsanAlhakim/go-auth-api/internal/routes"
+	"github.com/IhsanAlhakim/go-auth-jwt/internal/config"
+	"github.com/IhsanAlhakim/go-auth-jwt/internal/database"
+	"github.com/IhsanAlhakim/go-auth-jwt/internal/handlers"
+	"github.com/IhsanAlhakim/go-auth-jwt/internal/middlewares"
+	"github.com/IhsanAlhakim/go-auth-jwt/internal/mux"
+	"github.com/IhsanAlhakim/go-auth-jwt/internal/routes"
 )
 
 var db *sql.DB

@@ -5,8 +5,8 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/IhsanAlhakim/go-auth-api/internal/auth"
-	"github.com/IhsanAlhakim/go-auth-api/internal/validation"
+	"github.com/IhsanAlhakim/go-auth-jwt/internal/auth"
+	"github.com/IhsanAlhakim/go-auth-jwt/internal/validation"
 	"golang.org/x/crypto/bcrypt"
 )
 

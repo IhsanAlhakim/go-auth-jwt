@@ -1,4 +1,4 @@
-module github.com/IhsanAlhakim/go-auth-api
+module github.com/IhsanAlhakim/go-auth-jwt
 
 go 1.24.3
 

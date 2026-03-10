@@ -4,7 +4,7 @@ import (
 	"errors"
 	"time"
 
-	"github.com/IhsanAlhakim/go-auth-api/internal/config"
+	"github.com/IhsanAlhakim/go-auth-jwt/internal/config"
 	"github.com/golang-jwt/jwt/v5"
 )
 
