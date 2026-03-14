@@ -66,9 +66,11 @@ func (h *Handler) SignIn(w http.ResponseWriter, r *http.Request) {
 	}
 
 	cookie := &http.Cookie{
-		Name:    h.cfg.TokenCookieName,
-		Value:   token,
-		Expires: time.Now().Add(time.Duration(1) * time.Hour),
+		Name:     h.cfg.TokenCookieName,
+		Value:    token,
+		Expires:  time.Now().Add(time.Duration(1) * time.Hour),
+		HttpOnly: true,
+		Path:     "/",
 	}
 	http.SetCookie(w, cookie)
 	Response(w, P{Message: "Sign In Successfull"}, http.StatusOK)
